@@ -1,0 +1,25 @@
+pipeline{
+  stages{
+     stage(one){
+     agent {
+     node {
+     label 'python"
+  }
+}
+     steps{
+         sh 'echo hello world'
+     }
+     }
+
+     stage(Two){
+     agent {
+     node {
+     label 'Java"
+  }
+}
+     steps{
+         sh 'echo hello world'
+     }
+     }
+  }
+}
